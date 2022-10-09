@@ -1,12 +1,12 @@
 import re
 
-filename = 'ejercicio_opcional/view-source_https___contenidosweb.prefecturanaval.gob.ar_alturas_index.php.html'
+filename = 'T.P.3/ejercicio_opcional/view-source_https___contenidosweb.prefecturanaval.gob.ar_alturas_index.php.html'
 
-with open(filename) as f_obj:
+with open(filename) as f:
     #Una forma:
     # lines = f_obj.readlines()
     # print(lines)
     
     #Otra forma:
-    for line in f_obj:
+    for line in f:
         print(line)

@@ -1,6 +1,5 @@
-import re
 
-filename = 'T.P.3/ejercicio_opcional/view-source_https___contenidosweb.prefecturanaval.gob.ar_alturas_index.php.html'
+filename = 'T.P.3/ejercicio_opcional/prefecturanaval_alturas.html'
 
 with open(filename) as f:
     #Una forma:

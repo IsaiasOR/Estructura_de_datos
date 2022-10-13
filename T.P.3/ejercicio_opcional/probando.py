@@ -12,19 +12,19 @@ content = soup.find_all(class_="table table-hover fpTable")
 content = str(content)
 
 # Processing the data using Regular Expressions.
-puerto = r'Puerto:\">\S\s?\(?\S?\)?'
+puerto = 'Puerto:\">\S\s?\(?\S?\)?'
 list_puerto = re.findall(puerto, content)
 
-rio= r'Río:\">\S'
+rio= 'Río:\">\S'
 list_rio = re.findall(rio, content)
 
-ultimo_registro = r'Ultimo registro:\"\sclass=\"warning\">\S'
+ultimo_registro = 'Ultimo registro:\"\sclass=\"warning\">\S'
 list_registro = re.findall(ultimo_registro, content)
 
-fecha = r'Fecha Hora:\"><b>\d/\S/\d\s-\s\d'
+fecha = 'Fecha Hora:\"><b>\d/\S/\d\s-\s\d'
 list_fecha = re.findall(fecha, content)
 
-estado = r'Estado:\">\S'
+estado = 'Estado:\">\S'
 list_estado = re.findall(estado, content)
 
 #  Saving the output.

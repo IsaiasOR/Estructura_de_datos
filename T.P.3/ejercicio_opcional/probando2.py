@@ -1,12 +1,12 @@
 import re
 
-filename = 'T.P.3/ejercicio_opcional/view-source_https___contenidosweb.prefecturanaval.gob.ar_alturas_index.php.html'
+filename = 'T.P.3/ejercicio_opcional/prefecturanaval_alturas.html'
 
-puerto = r'Puerto:\">\S\s?\(?\S?\)?'
-rio= r'Río:\">\S'
-ultimo_registro = r'Ultimo registro:\"\sclass=\"warning\">\S'
-fecha = r'Fecha Hora:\"><b>\d/\S/\d\s-\s\d'
-estado = r'Estado:\">\S'
+puerto = 'Puerto:\">\S\s?\(?\S?\)?'
+rio= 'Río:\">\S'
+ultimo_registro = 'Ultimo registro:\"\sclass=\"warning\">\S'
+fecha = 'Fecha Hora:\"><b>\d/\S/\d\s-\s\d'
+estado = 'Estado:\">\S'
 
 with open(filename) as f:
     for line in f:

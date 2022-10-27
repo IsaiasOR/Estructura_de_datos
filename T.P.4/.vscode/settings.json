@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./python-ed-fcad-uner",
+        "./python-ed-fcad-uner/data_structures/trees"
+    ]
+}

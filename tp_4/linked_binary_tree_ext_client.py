@@ -1,5 +1,5 @@
-from data_structures import BinaryTreeNode
-from linked_binary_tree_ext import LinkedBinaryTreeExt
+from python_ed_fcad_uner.data_structures.trees import BinaryTreeNode
+from punto1_2.linked_binary_tree_ext import LinkedBinaryTreeExt
 
 nodo_a = BinaryTreeNode('A')
 nodo_b = BinaryTreeNode('B')
@@ -32,3 +32,17 @@ arbol.add_left_child(nodo_k, nodo_m)
 arbol.add_right_child(nodo_k, nodo_n)
 
 print(arbol)
+
+print("¿Los nodos b y f son hermanos?:", arbol.hermanos(nodo_b, nodo_f))
+
+print("\nNodos hojas:")
+print(arbol.hojas())
+
+print("\nNodos internos:")
+print(arbol.internos())
+
+print("\nProfundidad del nodo i:")
+print(arbol.profundidad(nodo_i))
+
+print("\nAltura del nodo f:")
+print(arbol.altura(nodo_f))

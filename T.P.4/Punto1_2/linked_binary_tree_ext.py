@@ -1,5 +1,0 @@
-from linked_binary_tree_ext_abstract import LinkedBinaryTreeExtAbstract
-from linked_binary_tree import LinkedBinaryTree
-
-class LinkedBinaryTreeExt(LinkedBinaryTree, LinkedBinaryTreeExtAbstract):
-    pass

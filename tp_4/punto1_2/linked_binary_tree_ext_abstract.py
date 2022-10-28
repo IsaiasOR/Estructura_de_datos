@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
-from typing import Any, List, Union
-from data_structures import BinaryTreeNode
+from typing import Any, List
+from python_ed_fcad_uner.data_structures import BinaryTreeNode
 
 class LinkedBinaryTreeExtAbstract(ABC):
     """ Conjunto de métodos adicionales a LinkedBinaryTree"""

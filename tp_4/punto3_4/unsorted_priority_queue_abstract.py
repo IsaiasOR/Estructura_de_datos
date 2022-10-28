@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 from typing import Any, Tuple
+
 class UnsortedPriorityQueueAbstract(ABC):
     """Cola de prioridad mínima no ordenada utilzando representación posicional."""
     

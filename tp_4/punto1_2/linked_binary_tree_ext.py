@@ -95,13 +95,6 @@ class LinkedBinaryTreeExt(LinkedBinaryTree, LinkedBinaryTreeExtAbstract):
         return 0
     
     def altura(self, nodo : BinaryTreeNode) -> int:
-        """ Retorna la longitud del camino entre nodo y la hoja más lejana.
-        Args:
-            nodo (BinaryTreeNode): nodo del que se quiere conocer la altura.
-        Returns:
-            int: Devuelve 0 en caso que nodo sea hoja, caso contrario, la cantidad de arcos
-            entre nodo y la hoja más lejana.
-        """
         queue = LinkedQueue()
         queue.enqueue(nodo)
         longitud = 0

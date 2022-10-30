@@ -3,9 +3,9 @@ from punto3_4.unsorted_priority_queue_abstract import UnsortedPriorityQueueAbstr
 from python_ed_fcad_uner.data_structures.priority_queues import PriorityQueueBase
 
 class UnsortedPriorityQueue(UnsortedPriorityQueueAbstract):
-    """Cola de prioridad mínima no ordenada utilizando representación posicional."""
+
     def __init__(self) -> None:
-        self.queue = []
+        self.queue : list[Any] = []
 
     def __len__(self) -> int:
         return len(self.queue) 

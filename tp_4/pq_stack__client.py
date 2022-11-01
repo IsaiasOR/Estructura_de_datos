@@ -2,12 +2,12 @@ from punto5_6.priority_queue_stack import PriorityQueueStack
 
 pila = PriorityQueueStack()
 
-pila.push("A", 3)
-pila.push("B", 5)
-pila.push("C", 1)
-pila.push("D", 8)
-pila.push("E", 7)
-pila.push("F", 2)
+pila.push("A")
+pila.push("B")
+pila.push("C")
+pila.push("D")
+pila.push("E")
+pila.push("F")
 
 print("Muestra de la pila:")
 print(pila.__str__())

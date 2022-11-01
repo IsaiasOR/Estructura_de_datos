@@ -14,4 +14,4 @@ print("-¿Estructura vacía?:",queue.is_empty())
 
 print("\n-Tupla conformada por la clave y valor del ítem con menor valor de clave:", queue.min())
 
-print("\n-Quita de la estructura el ítem con menor valor de clave", queue.remove_min())
+print("\n-Quita de la estructura el ítem con menor valor de clave:", queue.remove_min())

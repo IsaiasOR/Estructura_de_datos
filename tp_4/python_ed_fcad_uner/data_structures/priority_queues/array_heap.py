@@ -46,7 +46,7 @@ class ArrayHeap(PriorityQueueBase):
 		Returns:
 			bool: True si está vacía. False, en caso contrario.
 		"""
-        return len(self) == 0
+        return len(self._data) == 0
 
     def add(self, key : Any, value: Any) -> None:
         """Agrega un nodo al Heap y lo deja en la posición definitiva aplicando rotaciones si corresponden.

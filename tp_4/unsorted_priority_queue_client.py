@@ -1,6 +1,5 @@
 from punto3_4.unsorted_priority_queue import UnsortedPriorityQueue
 
-
 queue = UnsortedPriorityQueue()
 
 queue.add(2, "A")
@@ -13,5 +12,10 @@ print("-Cantidad de elementos de la estructura:",queue.__len__())
 print("-¿Estructura vacía?:",queue.is_empty())
 
 print("\n-Tupla conformada por la clave y valor del ítem con menor valor de clave:", queue.min())
+print("-Quita de la estructura el ítem con menor valor de clave:", queue.remove_min())
 
-print("\n-Quita de la estructura el ítem con menor valor de clave:", queue.remove_min())
+print("\n-Tupla conformada por la clave y valor del ítem con menor valor de clave:", queue.min())
+print("-Quita de la estructura el ítem con menor valor de clave:", queue.remove_min())
+
+print("\n-Tupla conformada por la clave y valor del ítem con menor valor de clave:", queue.min())
+print("-Quita de la estructura el ítem con menor valor de clave:", queue.remove_min())

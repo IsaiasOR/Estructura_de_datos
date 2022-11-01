@@ -111,7 +111,7 @@ class LinkedBinaryTreeExt(LinkedBinaryTree, LinkedBinaryTreeExtAbstract):
             
             # Si el actual no tiene hijos...
             if current.children_count() == 0:
-                # Si el nodo actual que no tiene hijos(una hoja) es igual nodo pasado por parámetro...
+                # Si el nodo actual que no tiene hijos(una hoja) es igual al nodo pasado por parámetro...
                 if current == nodo:
                     return 0
                 
@@ -128,5 +128,4 @@ class LinkedBinaryTreeExt(LinkedBinaryTree, LinkedBinaryTreeExtAbstract):
             queue.dequeue()
         
         return longitud
-    
     

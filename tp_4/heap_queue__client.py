@@ -1,16 +1,18 @@
 from punto7_8.heap_queue import HeapQueue
 
-cola = HeapQueue()
+queue = HeapQueue()
 
-cola.add(3, "Hola")
-cola.add(5, "Buen día")
-cola.add(1, "Buenas")
-cola.add(2, "Buenas noches")
-cola.add(8, "¿Qué tal?")
+queue.enqueue("Hola")
+queue.enqueue("Buen día")
+queue.enqueue("Buenas")
+queue.enqueue("Buenas noches")
+queue.enqueue("¿Qué tal?")
 
-print(cola)
+print("Primer elemento ubicado al frente de la cola:",queue.first())
+print("Remueve el primer elemento de la cola:",queue.dequeue())
 
-print("\n-¿Estructura vacía?:", cola.is_empty())
-print("-Cantidad de nodos de la estructura:", cola.__len__())
-cola.__str__()
-print("-Elemento ubicado en la raiz del heap:", cola.min())
+print("\nNuevo elemento ubicado al frente de la cola:",queue.first())
+print("Remueve el primer elemento de la cola:",queue.dequeue())
+
+print("\nNuevo elemento ubicado al frente de la cola:",queue.first())
+print("Remueve el primer elemento de la cola:",queue.dequeue())

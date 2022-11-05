@@ -21,7 +21,7 @@ class Empleado:
             return (self.__legajo == __otro.__legajo) and (self.__documento == __otro.__documento) and (self.__apellido == __otro.__apellido) and (self.__nombre == __otro.__nombre) and (self.__oficina == __otro.__oficina)
         
     def __lt__(self, other):
-        return self.__legajo > other.__legajo
+        return self.__legajo < other.__legajo
     
     @property
     def legajo(self):

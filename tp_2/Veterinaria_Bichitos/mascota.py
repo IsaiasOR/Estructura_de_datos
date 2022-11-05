@@ -22,9 +22,14 @@ class Mascota:
         if isinstance(__otro, Mascota):
             return self.__num_registro == __otro.__num_registro and self.__nombre == __otro.__nombre and self.__raza == __otro.__raza and self.__anio_nacimiento == __otro.__anio_nacimiento and self.__responsable == __otro.__responsable
     
-    def calcular_edad(self):
+    @property
+    def edad(self):
         anio = datetime.date.today()
         return anio.year - self.__anio_nacimiento
+    
+    @edad.setter
+    def edad(self):
+        raise Exception("No se puede modificar la edad.")
     
     @property
     def num_registro(self):

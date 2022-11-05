@@ -26,12 +26,12 @@ class Marcacion:
             return (self.__num_registro == __otro.__num_registro) and (self.__empleado == __otro.__empleado) and (self.__fecha_hora == __otro.__fecha_hora) and (self.__tipo == __otro.__tipo)
         
     @property
-    def ultimo_num_registro(self):
-        return Marcacion.__ultimo_num_registro
+    def ultimo_num_registro(cls):
+        return cls.__ultimo_num_registro
     
     @ultimo_num_registro.setter
-    def ultimo_num_registro(self, ultimo_num_registro:int):
-        raise Exception("No se puede modificar esta propiedad")
+    def ultimo_num_registro(cls):
+        raise Exception("No se puede modificar esta propiedad.")
     
     @property
     def num_registro(self):

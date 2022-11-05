@@ -45,11 +45,7 @@ class VideojuegosAdmin(VideojuegosAdminAbstract):
     def ordenar_titulo(self) -> None:
         """Ordena los videojuegos por titulo."""
         self.videojuegos.sort(key=lambda v : v.titulo)
-        for v in self.videojuegos:
-            print(v)
 
     def ordenar_mejores_primero(self) -> None:
         """Ordena los videojuegos por ranking descendente. """
         self.videojuegos.sort(key=lambda v : v.ranking_metacritic, reverse=True)
-        for v in self.videojuegos:
-            print(v)

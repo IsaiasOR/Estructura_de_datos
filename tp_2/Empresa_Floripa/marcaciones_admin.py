@@ -45,24 +45,16 @@ class MarcacionesAdmin(MarcacionesAdminAbstract):
         """Ordena las marcaciones por legajo de empleado y luego por fecha/hora."""
         
         print("\n","{titulo:*^80}".format(titulo="Orden de las marcaciones por legajo"))
-        lista = sorted(self.marcaciones, key=lambda m : m.empleado.legajo)
-        for l in lista:
-            print(l)
-            
+        self.marcaciones.sort(key=lambda m : m.empleado.legajo)
+
         print("\n","{titulo:*^80}".format(titulo="Orden de las marcaciones por fecha/hora"))
-        lista = sorted(self.marcaciones, key=lambda m : m.fecha_hora)
-        for l in lista:
-            print(l)
+        self.marcaciones.sort(key=lambda m : m.fecha_hora)
 
     def ordenar_apellido_nombre(self) -> None:
         """Ordena las marcaciones por apellido y nombre del empleado, luego por fecha/hora."""
         
         print("\n","{titulo:*^80}".format(titulo="Orden de las marcaciones por apellido y nombre del empleado"))
-        lista = sorted(self.marcaciones, key=lambda m : m.empleado.apellido)
-        for l in lista:
-            print(l)
-            
+        self.marcaciones.sort(key=lambda m : m.empleado.apellido)
+
         print("\n","{titulo:*^80}".format(titulo="Orden de las marcaciones por fecha/hora"))
-        lista = sorted(self.marcaciones, key=lambda m : m.fecha_hora)
-        for l in lista:
-            print(l)
+        self.marcaciones.sort(key=lambda m : m.fecha_hora)

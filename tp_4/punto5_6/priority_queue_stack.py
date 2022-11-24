@@ -33,3 +33,22 @@ class PriorityQueueStack(ArrayStack, PriorityQueueBase):
         """
         self._data.append(self._Item(self._priority, elem)) # Agrega elem al final de la lista.
         self._priority -= 1
+        
+    def top(self) -> Any:
+        """Devuelve (sin quitar) el elemento ubicado en el tope de la pila.
+        Arroja una excepción si la pila está vacía.
+        """
+        if self.is_empty():
+            raise Exception("La pila está vacía. La operación no se puede llevar a cabo.")
+        
+        return self._data[-1]._value # Devuelve el último elemento de la lista.
+    
+    def pop(self) -> Any:
+        """Quita y devuelve el elemento ubicado en el tope de la pila.
+        Arroja una excepción si la pila está vacía
+        """
+        if self.is_empty():
+            raise Exception("La pila está vacía")
+        
+        aux = self._data.pop() # Quita el último elemento de la lista.
+        return aux._value

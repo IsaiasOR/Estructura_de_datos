@@ -81,9 +81,14 @@ class Deque(DequeAbstract):
             raise Exception("Estructura vacía. No se puede continuar.")
         
         aux = self._front #Guarda en aux el que se encuentra en el frente
-        anterior = None 
+        anterior = None
         while aux.next: #Mientras que el siguiente del aux exista...
             anterior = aux 
-            aux = aux.next 
-        anterior.next = aux.next #Al ultimo elemento le coloca none ya que no existe el siguiente al ultimo de la cola
+            aux = aux.next
+            
+        if anterior == None:
+            self._front = None
+        else:
+            anterior.next = aux.next #Al ultimo elemento le coloca none ya que no existe el siguiente al ultimo de la cola
         self._size -= 1
+        del aux

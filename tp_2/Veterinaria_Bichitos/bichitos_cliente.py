@@ -9,7 +9,7 @@ def imprimir(mascotas : list):
         print(m)
 
 def filtrar_gerontes(mascotas : list):
-    lista = [m for m in mascotas if m.calcular_edad() >= 13]
+    lista = [m for m in mascotas if m.edad >= 13]
     return lista
 
 def filtrar_por_especie(mascotas : list, especie : Especie):

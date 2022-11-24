@@ -69,13 +69,3 @@ imprimir(lista.filtrar_por_tipo(salida))
 print("----------------------------------------------------------------------------------------------------")
 print("{titulo:-^80}".format(titulo="Marcaciones realizadas fuera del horario de ingreso"))
 imprimir(lista.llegadas_tarde())
-
-print("\n"+"----------------------------------------------------------------------------------------------------")
-print("Ordena las marcaciones por legajo de empleado y luego por fecha/hora")
-print("----------------------------------------------------------------------------------------------------")
-lista.ordenar_legajo()
-
-print("\n"+"----------------------------------------------------------------------------------------------------")
-print("Ordena las marcaciones por apellido y nombre del empleado, luego por fecha/hora")
-print("----------------------------------------------------------------------------------------------------")
-lista.ordenar_apellido_nombre()

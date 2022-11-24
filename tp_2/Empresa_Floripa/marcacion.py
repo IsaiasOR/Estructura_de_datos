@@ -6,14 +6,16 @@ from empleado import Empleado
 class Marcacion:
     
     __ultimo_num_registro = 0
+    __contador = 0
     
     def __init__(self, num_registro:int, empleado:Empleado, fecha_hora:datetime, tipo:MarcacionTipo):
         self.__num_registro = num_registro
+        Marcacion.__contador += 1
         self.__empleado = empleado
         self.__fecha_hora = fecha_hora
         self.__tipo = tipo
         
-        Marcacion.__ultimo_num_registro += 1
+        Marcacion.__ultimo_num_registro = num_registro
         
     def __str__(self):
         return "* Numero de resgistro: {},\n Empleado: [{}], Fecha y hora: {}, Tipo: {}".format(self.__num_registro, self.__empleado, self.__fecha_hora, self.__tipo)
